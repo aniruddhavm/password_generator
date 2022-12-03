@@ -15,7 +15,7 @@ def password(request):
     if request.GET.get('numbers'):
         characters.extend(list('0123456789'))
 
-    length = int(request.GET.get('length',12))
+    length = int(request.GET.get('length',10))
 
     thepassword = ''
     for x in range(length):
